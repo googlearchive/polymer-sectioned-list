@@ -22,7 +22,7 @@
 					height: 100%;
 				}
 				polymer-sectioned-list ^ #sticky,
-				polymer-sectioned-list > div > div {
+				polymer-sectioned-list .item {
 					background: white;
 					border-style: solid;
 					border-color: black;
@@ -31,14 +31,14 @@
 					user-select: none;
 				}
 				polymer-sectioned-list ^ #sticky,
-				polymer-sectioned-list > div > div.header {
+				polymer-sectioned-list .item.header {
 					font-weight: bold;
 				}
 			</style>
 			<polymer-sectioned-list data="{{data}}">
 				<template>
-					<div class="header" hidden?="{{!item.header}}">{{item.header}}</div>
-					<div hidden?="{{item.header}}">section: {{item.section}}, item: {{item.value}}</div>
+					<div class="item header" hidden?="{{!item.header}}">{{item.header}}</div>
+					<div class="item" hidden?="{{item.header}}">section: {{item.section}}, item: {{item.value}}</div>
 				</template>
 			</polymer-sectioned-list>
 		</template>
