@@ -2,6 +2,7 @@
   "name": "polymer-sectioned-list",
   "private": true,
   "dependencies": {
-    "polymer-list": "Polymer/polymer-list#master"
-  }
+    "polymer-list": "Polymer/polymer-list#0.2.2"
+  },
+  "version": "0.2.2"
 }
